@@ -61,7 +61,7 @@ body{
             content: "";
             position: absolute;
             background-color: $color6;
-            height: 2px;
+            height: 1.5px;
             width: 0;
             left: 0;
             bottom: -0px;
@@ -147,6 +147,17 @@ body{
     .img-btn a{
         display: none;
     }
+    .svg{
+        // margin-top: -3px;
+    }
+    svg.vert-move {
+        animation: mover 1s infinite  alternate;
+    }
+    @keyframes mover {
+        0% { transform: translateY(2px); }
+        100% { transform: translateY(-3px); }
+    }
+    
 }
 
 #about-me{
@@ -406,6 +417,23 @@ body{
     .text{
         span{
             font-size: 33px !important;
+            
+        }
+        .btn-link{
+            a{
+            // width: 30px;
+            padding: 10px 0;
+            background: none;
+            border: 1px solid white;
+            color: #D4091F;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            transition: .5s;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 15px;
+            }
             
         }
         
